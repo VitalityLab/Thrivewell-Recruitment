@@ -1,4 +1,4 @@
-# ThriveWell recruitment website
+# Thrivewell-Recruitment
 
 A buildless, responsive static website for the UIC ThriveWell research study. Content is based on the supplied recruitment document. The food illustration is decorative; the personalization panel is clearly labeled as a concept, not a product screenshot. The official Vitality Lab logo is sourced from the UIC lab website.
 
@@ -18,4 +18,10 @@ Set `screeningUrl` in `dist/config.js` to the final HTTPS survey URL. The main p
 - `dist/script.js`: mobile menu and screening link
 - `dist/assets/vitality-logo.jpg`: official lab logo
 
-The proposed custom domains in the supplied document are not configured. Sites hosting starts with private access.
+## GitHub Pages
+
+The GitHub Actions workflow in `.github/workflows/pages.yml` deploys `dist/` when `main` is updated. In the repository's Settings → Pages, set the publishing source to **GitHub Actions**.
+
+Website: https://VitalityLab.github.io/Thrivewell-Recruitment/
+
+The proposed custom domains in the supplied document are not configured. The separate Sites-hosted version starts with private access.
