@@ -17,6 +17,7 @@ Set `screeningUrl` in `dist/config.js` to the final HTTPS survey URL. The main p
 - `dist/config.js`: screening survey configuration
 - `dist/script.js`: mobile menu and screening link
 - `dist/assets/vitality-logo.jpg`: official lab logo
+- `dist/assets/thrivewell-logo.png`: supplied ThriveWell logo for the header
 - `dist/assets/thrivewell-chat.png`: study-team screenshot of the recipe assistant
 
 ## GitHub Pages

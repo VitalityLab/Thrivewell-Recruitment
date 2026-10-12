@@ -19,11 +19,10 @@ a:focus-visible, button:focus-visible { outline: 3px solid #97601b; outline-offs
 .wrap { width: min(1220px, calc(100% - 96px)); margin: auto; }
 .skip { position: fixed; top: -100px; left: 20px; background: white; z-index: 9; padding: 12px; }
 .skip:focus { top: 10px; }
-header { background: var(--cream); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
+header { background: #f1f3ed; border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 5; }
 .nav { height: 94px; display: flex; align-items: center; justify-content: space-between; }
-.wordmark { font-size: 28px; font-weight: 650; letter-spacing: -1.3px; text-decoration: none; display: inline-flex; align-items: center; line-height: 1.2; }
-.wordmark > span:not(.leaf) { font-weight: 400; }
-.leaf { font-size: 37px; color: #607c46; margin-right: 9px; }
+.brand-logo { display: inline-flex; align-items: center; flex-shrink: 0; }
+.brand-logo img { display: block; width: 213px; height: auto; clip-path: inset(0 0 0 1px); }
 .nav nav { display: flex; align-items: center; gap: 34px; }
 .nav nav a { text-decoration: none; font-size: 14px; font-weight: 550; }
 .nav-cta { border: 1px solid var(--green); padding: 10px 18px; border-radius: 5px; }
@@ -115,7 +114,7 @@ footer { border-top: 1px solid var(--line); background: #f0f2e8; padding: 30px 0
   html { scroll-padding-top: 92px; }
   .wrap { width: calc(100% - 40px); }
   .nav { height: 76px; }
-  .nav .wordmark { font-size: 25px; }
+  .brand-logo img { width: 190px; }
   .nav nav { display: none; }
   .menu { display: block; border: 1px solid #ccd5bd; background: none; border-radius: 4px; color: var(--ink); padding: 4px 11px; font-size: 21px; }
   .mobile-nav { padding: 10px 20px 20px; display: grid; gap: 8px; border-top: 1px solid var(--line); }
