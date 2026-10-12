@@ -1,6 +1,6 @@
 # Thrivewell-Recruitment
 
-A buildless, responsive static website for the UIC ThriveWell research study. Content is based on the supplied recruitment document. The food illustration is decorative; the personalization panel is clearly labeled as a concept, not a product screenshot. The official Vitality Lab logo is sourced from the UIC lab website.
+A buildless, responsive static website for the ThriveWell research study. Recruitment copy follows the supplied study document and the October 11 wording revisions. The chat screenshot was supplied by the study team. The official Vitality Lab logo is sourced from the UIC lab website.
 
 ## Preview
 
@@ -17,6 +17,7 @@ Set `screeningUrl` in `dist/config.js` to the final HTTPS survey URL. The main p
 - `dist/config.js`: screening survey configuration
 - `dist/script.js`: mobile menu and screening link
 - `dist/assets/vitality-logo.jpg`: official lab logo
+- `dist/assets/thrivewell-chat.png`: study-team screenshot of the recipe assistant
 
 ## GitHub Pages
 
