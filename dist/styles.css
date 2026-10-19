@@ -20,10 +20,13 @@ a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid #98641e; outline-offset: 5px; }
 .site-header { border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 32px; padding-block: 22px; }
-.header-logos { display: flex; align-items: center; gap: 24px; min-width: 0; width: min(452px, 100%); }
+.header-logos { display: flex; align-items: center; gap: 24px; min-width: 0; width: min(524px, 100%); }
 .header-logos img { display: block; height: auto; object-fit: contain; }
 .college-logo { width: 320px; max-width: 100%; min-width: 0; }
-.health-logo { width: 108px; flex-shrink: 0; }
+/* Match the visible artwork heights while preserving each logo's proportions. */
+.health-logo { position: relative; width: min(180px, 56.25%); aspect-ratio: 11 / 4; overflow: hidden; flex-shrink: 0; }
+/* Trim the supplied image's white margins and center its artwork within the frame. */
+.health-logo img { position: absolute; top: 50%; left: 50%; width: 183%; max-width: none; transform: translate(-50%, -46.05%); }
 nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
@@ -104,9 +107,10 @@ li:last-child { margin-bottom: 0; }
   .contact-grid { grid-template-columns: 1fr; gap: 25px; }
   .contact-section { padding-bottom: 37px; }
 }
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   .header-logos { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 16px; width: 100%; }
   .college-logo { width: 100%; max-width: 320px; }
+  nav { justify-content: space-between; width: 100%; }
 }
 @media print {
   .wrap { width: 100%; }
