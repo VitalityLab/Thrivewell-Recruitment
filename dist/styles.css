@@ -20,13 +20,11 @@ a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid #98641e; outline-offset: 5px; }
 .site-header { border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 32px; padding-block: 22px; }
-.header-logos { display: flex; align-items: center; gap: 24px; min-width: 0; width: min(594px, 100%); }
+.header-logos { display: flex; align-items: center; gap: 24px; min-width: 0; width: min(572px, 100%); }
 .header-logos img { display: block; height: auto; object-fit: contain; }
 .college-logo { width: 320px; max-width: 100%; min-width: 0; }
 /* Balance the visible artwork areas while preserving each logo's proportions. */
-.health-logo { position: relative; width: min(250px, 78.125%); aspect-ratio: 11 / 4; overflow: hidden; flex-shrink: 0; }
-/* Trim the supplied image's white margins and center its artwork within the frame. */
-.health-logo img { position: absolute; top: 50%; left: 50%; width: 183%; max-width: none; transform: translate(-50%, -46.05%); }
+.health-logo { width: min(228px, 71.25%); max-width: 100%; flex-shrink: 0; }
 nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
