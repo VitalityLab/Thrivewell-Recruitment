@@ -19,12 +19,12 @@ a { color: var(--green); text-underline-offset: 4px; }
 a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid #98641e; outline-offset: 5px; }
 .site-header { border-bottom: 1px solid var(--line); }
-.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 32px; padding-block: 22px; }
-.health-logo { display: block; width: 260px; max-width: 100%; height: auto; object-fit: contain; flex-shrink: 0; }
+.header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-block: 14px; }
+.health-logo { display: block; width: 224px; max-width: 100%; height: auto; aspect-ratio: 505 / 153; object-fit: contain; flex-shrink: 0; }
 nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
-.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 64px; align-items: start; padding-block: 64px; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(0, .85fr); gap: 64px; align-items: start; padding-block: 48px; }
 .purpose-heading { font-size: 1.1rem; margin: 29px 0 12px; letter-spacing: 0; }
 .purpose { font-size: 17px; }
 .study-lead { font-size: 14px; color: var(--muted); }
@@ -101,7 +101,7 @@ li:last-child { margin-bottom: 0; }
   .contact-section { padding-bottom: 37px; }
 }
 @media (max-width: 720px) {
-  .header-inner { flex-direction: column; gap: 12px; padding-block: 20px 12px; }
+  .header-inner { flex-direction: column; gap: 10px; padding-block: 16px 12px; }
   nav { justify-content: space-between; width: 100%; gap: 4px 12px; }
 }
 @media print {
