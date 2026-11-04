@@ -20,11 +20,7 @@ a:hover { text-decoration-thickness: 2px; }
 a:focus-visible { outline: 3px solid #98641e; outline-offset: 5px; }
 .site-header { border-bottom: 1px solid var(--line); }
 .header-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px 32px; padding-block: 22px; }
-.header-logos { display: flex; align-items: center; gap: 24px; min-width: 0; width: min(572px, 100%); }
-.header-logos img { display: block; height: auto; object-fit: contain; }
-.college-logo { width: 320px; max-width: 100%; min-width: 0; }
-/* Balance the visible artwork areas while preserving each logo's proportions. */
-.health-logo { width: min(228px, 71.25%); max-width: 100%; flex-shrink: 0; }
+.health-logo { display: block; width: 260px; max-width: 100%; height: auto; object-fit: contain; flex-shrink: 0; }
 nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
 nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: 14px; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
@@ -75,7 +71,6 @@ li:last-child { margin-bottom: 0; }
 .skip:focus { top: 12px; }
 @media (max-width: 960px) {
   .wrap { width: calc(100% - 56px); }
-  .header-inner { align-items: flex-start; flex-direction: column; gap: 10px; padding-block: 18px 12px; }
   .hero { grid-template-columns: 1fr; gap: 32px; padding-block: 44px; }
   .hero-copy { max-width: 760px; }
   .study-overview dl { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, .9fr) minmax(0, 1.4fr); gap: 24px; }
@@ -106,9 +101,8 @@ li:last-child { margin-bottom: 0; }
   .contact-section { padding-bottom: 37px; }
 }
 @media (max-width: 720px) {
-  .header-logos { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; gap: 16px; width: 100%; }
-  .college-logo { width: 100%; max-width: 320px; }
-  nav { justify-content: space-between; width: 100%; }
+  .header-inner { flex-direction: column; gap: 12px; padding-block: 20px 12px; }
+  nav { justify-content: space-between; width: 100%; gap: 4px 12px; }
 }
 @media print {
   .wrap { width: 100%; }
